@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Logistics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #3498db;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?transport');
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .truck-section {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        .truck-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card p {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Surya Logistics</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="service.html">Services</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <section class="truck-section">
+        <h2>Our Trucks</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/l2.png" alt="Heavy Trucks">
+                <p>Heavy Trucks</p>
+            </div>
+            <div class="card">
+                <img src="/images/t3.png" alt="Long Haul Transport Truck">
+                <p>Long Haul Transport Truck</p>
+            </div>
+            <div class="card">
+                <img src="/images/l.png" alt="Container Cargo Vehicles">
+                <p>Container Cargo Vehicles</p>
+            </div>
+        </div>
+    </section>
+<section class="about-section" style="padding: 2rem; background-color: #ffffff;">
+    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 1rem;">About Us</h2>
+    <p style="max-width: 800px; margin: 0 auto; text-align: center; color: #555; font-size: 1rem; line-height: 1.6; block-size: 2.6;">
+        Surya Logistics is a leading logistics provider based in Tamil Nadu, offering reliable and efficient transport solutions across India. With a fleet of modern trucks and a commitment to timely delivery, we ensure your cargo reaches its destination safely. Our services are tailored to meet the needs of businesses big and small, backed by years of experience and a passion for excellence.
+    </p>
+</section>
+
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; Surya Logistics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

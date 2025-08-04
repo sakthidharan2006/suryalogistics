@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking - Surya Logistics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+           
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .tracking-section {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .tracking-section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input[type="text"] {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 0.8rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .result {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            display: none;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tracking - Surya Logistics</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="#">Tracking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="tracking-section">
+        <h2>Track Your Shipment</h2>
+        <form onsubmit="trackShipment(event)">
+            <input type="text" id="trackingId" placeholder="Enter Tracking ID" required>
+            <button type="submit">Track</button>
+        </form>
+        <div class="result" id="resultBox">
+            <p><strong>Status:</strong> In Transit</p>
+            <p><strong>Estimated Delivery:</strong> 2 Days</p>
+            <p><strong>Last Location:</strong> Coimbatore Hub</p>
+        </div>
+    </section>
+
+ 
+
+    <script>
+        function trackShipment(event) {
+            event.preventDefault();
+            const resultBox = document.getElementById('resultBox');
+            resultBox.style.display = 'block';
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; Surya Logistics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
